@@ -20,7 +20,7 @@ Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, 
 
 Put and image of your UML Diagram here. Upload the image of your UML Diagram to your repository, then use the Markdown syntax to insert your image here. Make sure your image file name is one work, otherwise it might not properly get display on this README.
 
-![UML Diagram for my project]()
+![UML Diagram for my project](image-1.png)
 
 ## Video
 
@@ -32,7 +32,7 @@ Record a short video of your story to display here on your README. You can do th
 - Upload the thumbnail image to your repo.
 - Use the following markdown
 
-[![Thumbnail for my projet](nameOfThumbnail.png)](youtube-URL-here)
+[![Thumbnail for my projet](nameOfThumbnail.png)](https://drive.google.com/file/d/1YInvDrrbTlpqaUThFmxLUlMISktaeVQc/view?usp=sharing)
 
 ## Story Description
 
@@ -43,4 +43,4 @@ This is a story of all the cooking work I have done over the past few months. St
 
 Choose at least 2 filters uses in your animation to explain how the pixels are modified. If you created a new image filter that was not one of the ones from this unit, make sure to explain and analyze that filter(s) before choosing ones that came from this unit.
 
-The color shift method traverses through row-major and brightens the pixels of the image. The guassian blur also traverses through in row-major order and blurs each pixel of the image.
+The color shift method traverses through row-major and brightens the pixels of the image. When calling the method, the user can choose a value between 0 and 255 to choose the intensity of the color shift. The guassian blur also traverses through in row-major order and blurs each pixel of the image. Each of the colors calculated the color average to produce these results.
