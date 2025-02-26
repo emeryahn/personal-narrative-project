@@ -38,9 +38,9 @@ Record a short video of your story to display here on your README. You can do th
 
 Write a description of the story that your animation showcases. Give addional context for your story here in the case your animation is more abstract and only has images and little text. Lastly, include what data in your project is represented in 2D arrays and how those directly relate to the story your animation showcase.
 
-This is a story of all the cooking work I have done over the past few months. Strings of images for the project are stored in the 2D arrays. This allows for the images to print correctly.
+This is a story of all the cooking work I have done over the past few months. Strings of image files, food names, food reviews, and sound files for the project are stored in the 2D arrays. This allows for these elements to be called based on row and column.
 ## Image Filter Analysis
 
 Choose at least 2 filters uses in your animation to explain how the pixels are modified. If you created a new image filter that was not one of the ones from this unit, make sure to explain and analyze that filter(s) before choosing ones that came from this unit.
 
-The color shift method traverses through row-major and brightens the pixels of the image. When calling the method, the user can choose a value between 0 and 255 to choose the intensity of the color shift. The guassian blur also traverses through in row-major order and blurs each pixel of the image. Each of the colors calculated the color average to produce these results.
+The colorShift method traverses through row-major and brightens the pixels of the image. When calling the method, the user can choose a value between 0 and 255 to choose the intensity of the color shift. The applyBlur also traverses through in row-major order and blurs each pixel of the image. Each of the colors calculated the color average to produce these results. The threshold method traverses the pixels in row-major order. Thsi method extracts the colors and makes the image black and white. The applySepia method traverses the pixels of the image is row-major order. It changes the values of the colors (red, green, and blue) to apply the sepia affect to the images.
