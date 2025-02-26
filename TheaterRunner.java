@@ -3,52 +3,30 @@ import org.code.media.*;
 
 public class TheaterRunner {
   public static void main(String[] args) {
-  
-  Scene images = new Scene();
+  /*
+   * 2D arrays storing image files,
+   * names of each image,
+   * and storing sound files
+   */
+  String[][] imageFiles = {{"tagliatelle.jpeg", "AP-CSA---Spaghetti-Squash.jpg",
+                            "AP-CSA---Raisin-Bagels.jpg", "AP-CSA---Baked-Pear.jpg"}};
+    
+  String[][] foodNames = {{"Tomahawk Steak Alfredo Tagliatelle", "Beef Sausage Marinara Spaghetti Squash", 
+                           "Yogurt Blueberry Raisin Bagels", "Blue Cheese and Honey Baked Pear"}};
 
-  // Tagliatelle image
-  ImageFilter tagliatelle = new ImageFilter("tagliatelle.jpeg");
+  String[][] foodReviews = {{"Dad: The sauce was exquisite!", "Mom: Super yummy.",
+                             "Sister: Tastes too healthy.", "Grandparents: This tasted lovely."}};
+    
+  String[][] soundFiles = {{"HeavyRain-VEED.wav", "doormove-VEED.wav",
+                            "SuperSheepWhoosh-VEED.wav", "campfire-VEED.wav"}};
 
-  images.drawImage(tagliatelle, 0, 0, tagliatelle.getWidth());
-  
-  images.pause(2);
+  // Plays scene in the theater
 
-  tagliatelle.applyBlur();
+  MyStory scene = new MyStory(imageFiles, foodNames, foodReviews, soundFiles);
 
-  images.drawImage(tagliatelle, 0, 0, tagliatelle.getWidth());
-  
-  images.pause(2);
-
-  //Spaghetti squash image
-  ImageFilter spaghetti = new ImageFilter("AP-CSA---Spaghetti-Squash.jpg");
-
-  images.drawImage(spaghetti, 0, 0, spaghetti.getWidth());
-
-  images.pause(2);
-
-  spaghetti.threshold(200);
-
-  images.drawImage(spaghetti, 0, 0, spaghetti.getWidth());
-
-  images.pause(2);
-
-  //Raisin bagel image
-  ImageFilter bagels = new ImageFilter("AP-CSA---Raisin-Bagels.jpg");
-
-  images.drawImage(bagels, 0, 0, bagels.getWidth());
-
-  images.pause(2);
-
-  bagels.colorShift(60);
-
-  images.drawImage(bagels, 0, 0, bagels.getWidth());
-
-  images.pause(2);
-
-  //Plays the scene
-  Theater.playScenes(images);
-
-
+  scene.displayScene();
+    
+  Theater.playScenes(scene);
 
 
 
